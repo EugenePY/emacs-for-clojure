@@ -73,7 +73,17 @@
     tagedit
 
     ;; git integration
-    magit))
+    magit
+    ;; evil
+    evil
+
+    ;; python
+    elpy
+
+    ;; linter
+    flycheck
+
+    ))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -108,7 +118,8 @@
 ;;;;
 ;; Customization
 ;;;;
-
+;; enable eveil mode
+(evil-mode 1)
 ;; Add a directory to our load path so that when you `load` things
 ;; below, Emacs knows where to look for the corresponding file.
 (add-to-list 'load-path "~/.emacs.d/customizations")
@@ -145,7 +156,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
+    (evil magit tagedit rainbow-delimiters projectile smex ido-completing-read+ cider clojure-mode-extra-font-locking clojure-mode paredit exec-path-from-shell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
